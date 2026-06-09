@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": "../..",
+    "paths": {
+      "@mfui/protocol": ["packages/protocol/src/index.ts"],
+      "@mfui/client": ["packages/client/src/index.ts"],
+      "@mfui/client/definitions": ["packages/client/src/definitions/index.ts"],
+      "@mfui/server": ["packages/server/src/index.ts"],
+      "@mfui/openai-compatible": ["packages/openai-compatible/src/index.ts"]
+    },
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": ["node", "vite/client"]
+  },
+  "include": [
+    "client/**/*.ts",
+    "client/**/*.vue",
+    "server/**/*.ts"
+  ]
+}

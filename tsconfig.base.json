@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "baseUrl": ".",
+    "paths": {
+      "@mfui/protocol": ["packages/protocol/src/index.ts"],
+      "@mfui/client": ["packages/client/src/index.ts"],
+      "@mfui/client/definitions": ["packages/client/src/definitions/index.ts"],
+      "@mfui/client/layouts": ["packages/client/src/layouts/index.ts"],
+      "@mfui/server": ["packages/server/src/index.ts"],
+      "@mfui/ai-sdk": ["packages/ai-sdk/src/index.ts"],
+      "@mfui/openai-responses": ["packages/openai-responses/src/index.ts"],
+      "@mfui/openai-compatible": ["packages/openai-compatible/src/index.ts"],
+      "@mfui/anthropic": ["packages/anthropic/src/index.ts"],
+      "@mfui/gemini": ["packages/gemini/src/index.ts"]
+    },
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true
+  }
+}

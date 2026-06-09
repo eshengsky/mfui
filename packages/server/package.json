@@ -1,0 +1,32 @@
+{
+  "name": "@mfui/server",
+  "version": "0.1.0",
+  "description": "Node server SDK for MFUI semantic messages.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "rm -rf dist tsconfig.tsbuildinfo && tsc -b tsconfig.json",
+    "typecheck": "tsc -b tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@mfui/protocol": "workspace:*",
+    "ajv": "^8.17.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

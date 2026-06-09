@@ -1,0 +1,21 @@
+{
+  "name": "mfui",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Message-first generative UI with portable text projections.",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.3.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "docs:build": "pnpm --filter @mfui/docs build",
+    "docs:dev": "pnpm --filter @mfui/docs dev",
+    "test": "vitest run",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  }
+}

@@ -1,0 +1,27 @@
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+}
+
+@media (min-width: 768px) {
+  .VPNavBarTranslations,
+  .VPNavBarAppearance,
+  .VPNavBarSocialLinks {
+    display: flex !important;
+    align-items: center;
+  }
+
+  .VPNavBarExtra {
+    display: none !important;
+  }
+}
+
+.VPFeature .icon {
+  background-color: color-mix(in srgb, var(--vp-c-brand-1) 10%, var(--vp-c-bg-soft));
+  color: var(--vp-c-brand-1);
+}
+
+.VPFeature .icon svg {
+  width: 24px;
+  height: 24px;
+}
