@@ -112,6 +112,7 @@ const zhSidebar = [
 export default defineConfig({
   title: 'MFUI',
   description: 'Message-first generative UI with portable text projections.',
+  base: '/mfui/',
   cleanUrls: true,
   locales: {
     root: {
