@@ -10,6 +10,10 @@
     "build": "pnpm -r build",
     "docs:build": "pnpm --filter @mfui/docs build",
     "docs:dev": "pnpm --filter @mfui/docs dev",
+    "release:check": "pnpm typecheck && pnpm build && pnpm test && pnpm release:pack",
+    "release:pack": "pnpm -r --filter './packages/*' pack --dry-run",
+    "release:publish": "pnpm -r --filter './packages/*' publish --publish-branch main",
+    "release:publish:dry-run": "pnpm -r --filter './packages/*' publish --dry-run --publish-branch main --no-git-checks",
     "test": "vitest run",
     "typecheck": "pnpm -r typecheck"
   },
